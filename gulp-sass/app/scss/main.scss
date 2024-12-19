@@ -1,0 +1,49 @@
+@import 'variables'; //пишем переменные
+@import 'reset'; //сброс стилей
+@import 'fonts'; //подключаем шрифты (локально)
+
+//подключаем БЭМ блоки
+@import "blocks/container.scss";
+@import "blocks/header";
+@import "blocks/footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  // font-family: 'Roboto', Raleway, sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle-left {
+  font-size: 22px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 0.5;
+  letter-spacing: 7.33333px;
+  padding-left: 103px;
+  position: relative;
+  display: inline-block;
+  &::before{
+    content: "";
+    background-color: #FFFFFF;
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    left: 0;
+    top: 50%;
+  }
+}
